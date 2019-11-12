@@ -10,10 +10,18 @@ class TestViewPagerAdapter(fm:FragmentManager) : FragmentPagerAdapter(fm) {
 
 //    각 위치에 어떤 fragment를 보여줄 건지
     override fun getItem(position: Int): Fragment {
-        if (position == 0) {
-            return FirstFragment()
-        } else {
-            return SecondFragment()
+//        if (position == 0) {
+//            return FirstFragment()
+//        } else {
+//            return SecondFragment()
+//        }
+        return when(position) {
+            0 -> {
+                FirstFragment()
+            }
+            else -> {
+                SecondFragment()
+            }
         }
 
     }
