@@ -13,6 +13,8 @@
         android:layout_height="150dp"
         class="com.tj.a20191112_01_fragment.fragments.FirstFragment"/>
 
+    <!-- 배경 검정, 글씨 흰색인 Second Fragment 추가 -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -28,6 +30,12 @@
             android:text="첫번째 분할 영역"/>
 
     </LinearLayout>
+
+    <fragment
+        android:id="@+id/secondFrag"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        class="com.tj.a20191112_01_fragment.fragments.SecondFragment"/>
 
     <LinearLayout
         android:layout_width="match_parent"
